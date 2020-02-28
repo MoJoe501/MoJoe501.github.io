@@ -1,0 +1,191 @@
+/*
+filename: style.css
+author: Joseph Slingo
+created: 22/03/2017
+last modified: 25/04/2017
+description: index.html, porduct.html, enquire.html, payment.html, about.html, enhancements.html
+*/
+
+/****** Across All Pages ******/
+* {font-family: calibri, sans-serif;}
+@font-face { /* importing external font */
+    font-family: Shine;
+    src: url(fonts/Shine.ttf);
+}
+body { /*the background across all htmls */
+	background-color: #FFFFFF;
+	background-image: url("images/BeachBackground.jpg"); /* http://eskipaper.com/images/beach-wallpaper-10.jpg */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.logo img {
+	display: block;
+	width: 165px; /*slight adjustment for logo's size for aesthetic purpose*/
+	margin: 3em 1.5em 1em 6em;
+	float: left;}
+h1 {
+	text-align: left;
+	font: 3em Shine, sans-serif;
+	float: left;
+	text-decoration: none;
+	color: #FFFFFF;
+	margin-top: 162px;
+}
+nav {
+	padding-left: 6em;
+	background-color: #000000;
+	opacity: 0.5;
+	margin: 0 -8px; /* so that it stretches right to the edge of the screen */
+	clear: both; 
+}
+br {
+    clear: both;
+}
+nav a {
+	text-decoration: none; /* remove underscore */
+	padding: 0.6em 1em;
+	color: #FFFFFF;
+	display: inline-block;
+}
+nav a:hover {background-color: #2d2d2d;}
+.page, .page:hover { /* highlights current page and overrides the previous over when ouse is over it */
+	background-color: #f2f2f2;
+	color: #000000
+}
+
+#confirmation, #enquiry, #product, #about, #enhancements { /* look of sections/form to make website have a similar style */
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	padding: 2em 4em;
+}
+input, fieldset {
+    border-style: solid; 
+    border-color: #848484;}
+input {
+    border-width: 1px;
+}
+.error {
+	border-style: solid;
+	border-color: #EF0000;
+}
+.errors {
+	color: #EF0000;
+}
+
+/****** index.html ******/
+#intro {
+	background-color: black;
+	opacity: 0.5;
+	padding: 0.4em 2em;
+	width: 30%;
+	margin: 3em 2em;
+	color: #FFFFFF;
+	line-height: 140%; /* trialing kerning */
+}
+
+/****** product.html ******/
+#product {
+	margin: 1em 1em 6em 5%;
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+#product img { /* adjusts the photo slightly to desirable size */
+	width: 300px;
+	float:left;
+	margin-right: 2em;
+}
+.packages {margin-bottom: 3em;}
+.packages li {
+	margin-left: 20em;
+	padding-left: 0.5em;
+}
+
+#hot{ /*aside*/
+	background-color: #FFFFFF;
+	padding: 1em 2.5em 2em 2.5em;
+	margin: 2em 3% 0 2em;
+	width: 25%;
+	border: 4px solid lightgreen;
+	border-radius: 5px;
+	float: right;
+}
+#hot tr {background-color: #EEEEEE;}
+#hot th { /* placed ofter to overdide tr */
+	background-color:#CCCCCC;
+	color: #FFFFFF;
+}
+
+/****** enquire.html, payment.html, enhancements.html, enhancements2.html ******/
+#enquiry, #confirmation, #enhancements {
+	width: 45%;
+	margin: 2em auto 6em auto;
+}
+fieldset {
+	margin: 2em auto 2em auto;
+	border-radius: 5px;
+}
+fieldset legend {
+    padding: 0 1em;
+}
+textarea {
+	max-width: 70%; 
+    max-height: 70%;
+}
+#details {float: left;}
+#pref {	float: right;}
+#address {clear: both;}
+#details input, #address input, #booking input, select, #confirm span, #payment input {margin-left: 12%;
+	float: right;}
+#pref input { clear: both;}
+#booking span {color: #919191}
+
+/****** about.html ******/
+#about {
+	margin: 2em auto 6em auto;
+	width: 65%;
+}
+#me { /*picture of me*/
+	border: 4px double #000000;
+	float:right;
+	border-radius:10px;
+	width: 170px;
+}
+dt {
+    clear: left;
+	float: left;
+	text-align: right;
+    font-weight: bold;
+}
+dt::after {content: " : "; }
+dd {margin-left: 12%;}
+#timetable {
+	background-color: #f5f5f5;
+	text-align: center;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cos10011 {background-color: lightpink;}
+.tne10006 {background-color: yellow;}
+.cos10003 {background-color: lightgreen;}
+.cos10009 {background-color: lightblue;}
+#contact {font-weight: bold;}
+
+/****** footer for all ******/
+footer {
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+}
+footer p {
+	color: white;
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: center;
+	margin-top: 4px;
+}
