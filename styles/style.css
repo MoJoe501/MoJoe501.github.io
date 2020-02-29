@@ -1,8 +1,8 @@
 /*
 filename: style.css
 author: Joseph Slingo
-created: 22/03/2017
-last modified: 25/04/2017
+created: 28/02/2020
+last modified: 28/02/2020
 description: index.html, porduct.html, enquire.html, payment.html, about.html, enhancements.html
 */
 
@@ -13,7 +13,7 @@ description: index.html, porduct.html, enquire.html, payment.html, about.html, e
     src: url(fonts/Shine.ttf);
 }
 body { /*the background across all htmls */
-	background-color: #FFFFFF;
+	background-color: #FFFFF;
 	background-image: url("images/BeachBackground.jpg"); /* http://eskipaper.com/images/beach-wallpaper-10.jpg */
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -29,7 +29,7 @@ h1 {
 	font: 3em Shine, sans-serif;
 	float: left;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #000000;
 	margin-top: 162px;
 }
 nav {
